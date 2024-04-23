@@ -27,7 +27,7 @@ Then, you'll have privileges to use the commands above:
 
 and
 
-`-h` add-ons. (Help)
+`-h` add-ons. (help)
 
 If you want to use PyTerm as a normal user, you can obviously type these commands above without any superprivileges:
 
@@ -43,7 +43,7 @@ If you want to use PyTerm as a normal user, you can obviously type these command
 
 and 
 
-`-h` add-ons
+`-h` add-ons (help)
 
 ## License
 
