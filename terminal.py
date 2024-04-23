@@ -1,22 +1,47 @@
-# Kind of a sudo command but its name is super and it gives use you "supercommands" that a normal user can't use. Password is SECRETCOMMAND
+# Kind of a sudo command but its name is super and it gives use you "supercommands" that a normal user can't use. Password is etsugenfgr.
 def supercommand():
-    password = "SECRETCOMMAND"
-    enter = input("What's the secret password? Say it:")
+    password = "etsugenfgr"
+    enter = input("Password:") 
     if enter == password:
-        # If the password is correct, you can use the commands above:
+        print("You are now in super mode.")
         while True:
-            command = input("You're in super mode. Type any supercommand:").strip().lower()
-            if command == "type":
+            command = input().strip().lower()
+            if command == "":
+                continue 
+            elif command == "supertype":
                 typed_text = input("Type something:")
-                return typed_text
+                print(typed_text + typed_text)
             elif command == "superexit":
                 return "Superexiting..."
+            elif command == "superinfo":
+                print("""
+    PPPP   y   y  TTTTT  EEEE  RRRR  M   M 
+    P   P   y y     T    E     R   R MM MM       
+    PPPP     y      T    EEE   RRRR  M M M       
+    P        y      T    E     R  R  M   M      
+    P        y      T    EEEE  R   R M   M SUPER MODE
+                      
+                PyTerm Supermode v1.0
+                Python: v3.8
+                Version Created: Twenty-Third April 2024
+                Initial Day Of Creation: Twenty-Third April 2024
+                Application: PyTerm v0.1-beta
+                
+                """)
             elif command == "superhelp":
-                return "type, superexit, superhelp,"
+                print("Commands: supertype, superexit, superinfo, superhelp. Add-ons: -h")
+            elif command == "supertype -h":
+                print("Supertype command represents everything that you wrote twice. It is similar to type command in basic-user mode but this one is showing different output.") 
+            elif command == "superexit -h":
+                print("Superexit command is letting you exit from the super mode. It is similar to exit command in basic-user mode but this one is exiting the supermode.") 
+            elif command == "superinfo -h":
+                print("Superinfo command shows you info-data about PyTerm Supermode. It is similar to info command in basic-user mode but this one is showing different info.")
+            elif command == "superhelp -h":
+                print("Superhelp command shows you all commands you can use in supermode. It is similar to help command in basic-user mode but this one shows different commands.")
             else:
-                print("No such command in super mode.")
+                print("No such command in supermode.")
     else:
-        return "Wrong password! You can't use the super command without the password."
+        print("PyTerm error: wrong password.")
 
 def pmdmcalc():
     operation = input("hint: + - / *. Type the symbol here: ").strip()
@@ -61,9 +86,10 @@ PPPP     y      T    EEE   RRRR  M M M
 P        y      T    E     R  R  M   M
 P        y      T    EEEE  R   R M   M
 
-        PyTerm v1.0-stable
+        PyTerm v0.1-beta
         Python: v3.8
-        Created: Twenty-Third April 2024
+        Version Created: Twenty-Third April 2024
+        Initial Day Of Creation: Twenty-Third April 2024
         Operating System: MacOS
         """
     # PMDM command lets you use PMDMcalc directly from PyTerm.
