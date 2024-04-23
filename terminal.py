@@ -7,11 +7,11 @@ def supercommand(command):
 # If the password is correct, you can use the commands above:
 # Type command is repeating what you wrote.
         if command == "type":
+            input("Type something:")
             return input()
 # Superexit command let's you exit the super command without ending the application.
         elif command == "superexit":
             return "Superexiting..."
-            ßß
 # I integrated my own calculator program named PMDMcalc in PyTerm.
     
 def pmdmcalc():
@@ -71,7 +71,7 @@ P        y      T    EEEE  R   R M   M
         return pmdmcalc()
 # Told about super at the start.
     elif command == "super":
-        return 
+        return supercommand(command)
 # If there's no commands that you entered, it shows an error.
     else:
         return "PyTerm: unknown command"
