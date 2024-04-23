@@ -71,13 +71,10 @@ def pmdmcalc():
 
 def handle_command(command):
     command = command.strip().lower()
-    # Help command lets you see all the commands in PyTerm.
     if command == "help":
         return "Available commands: help, exit, info, pmdm, super"
-    # Exit command helps you exit the PyTerm application.
     elif command == "exit":
         return "Exiting..."
-    # Info command lets you know the version of PyTerm and other data.
     elif command == "info":
         return """
 PPPP   y   y  TTTTT  EEEE  RRRR  M   M
@@ -92,13 +89,10 @@ P        y      T    EEEE  R   R M   M
         Initial Day Of Creation: Twenty-Third April 2024
         Operating System: MacOS
         """
-    # PMDM command lets you use PMDMcalc directly from PyTerm.
     elif command == "pmdm":
         return pmdmcalc()
-    # Told about super at the start.
     elif command == "super":
         return supercommand()
-    # If there's no commands that you entered, it shows an error.
     else:
         return "PyTerm: unknown command"
 
