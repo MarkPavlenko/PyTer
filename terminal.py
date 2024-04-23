@@ -93,6 +93,16 @@ P        y      T    EEEE  R   R M   M
         return pmdmcalc()
     elif command == "super":
         return supercommand()
+    elif command == "help -h":
+        return "Help is a command that let's you see all the commands in PyTerm."
+    elif command == "exit -h":
+        return "Exit is a command that sends you back to bash. Basically it just ends the program."
+    elif command == "info -h":
+        return "Info is a command that let's you see all info-data about PyTerm."
+    elif command == "pmdm -h":
+        return "PMDMcalc is my own project, and now it is integrated with PyTerm! The PMDM command let's you use PMDMcalc directly from the PyTerm application."
+    elif command == "super -h":
+        return "Super command activates supermode that let's you use supercommands. It's like sudo but not."
     else:
         return "PyTerm: unknown command"
 
