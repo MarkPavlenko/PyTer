@@ -130,7 +130,7 @@ PPPP     y      T    EEE   RRRR  M M M
 P        y      T    E     R  R  M   M
 P        y      T    EEEE  R   R M   M
 
-        PyTerm v0.1-beta
+        PyTerm v0.1.0-beta
         Python: v3.8
         Version Created: Twenty-Third April 2024
         Initial Day Of Creation: Twenty-Third April 2024
