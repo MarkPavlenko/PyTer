@@ -121,7 +121,7 @@ def handle_command(command):
     if command == "help":
         return "Available commands: help, exit, info, pmdm, super, type. Available Add-ons: -h"
     elif command == "exit":
-        return "Exiting..."
+        return "zsh activated."
     elif command == "info":
         return """
 PPPP   y   y  TTTTT  EEEE  RRRR  M   M
