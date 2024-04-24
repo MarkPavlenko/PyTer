@@ -39,6 +39,8 @@ If you want to use PyTerm as a normal user, you can obviously type these command
 
 `exit`
 
+`type`
+
 `super` (if you need supercommands)
 
 and 
