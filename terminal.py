@@ -8,8 +8,6 @@ def supercommand():
             command = input().strip().lower()
             if command == "":
                 continue
-            elif command == "superpmdm":
-                superpmdmcalc()
             elif command == "supertype":
                 typed_text = input("Type something:")
                 print(typed_text + typed_text)
@@ -44,7 +42,7 @@ def supercommand():
                 print("No such command in supermode.")
     else:
         print("PyTerm error: wrong password.")
-# PMDMcalc integrated with PyTerm, and even more powerful version for the supermode, SUPERPMDMcalc!
+# PMDMcalc integrated with PyTerm but with a little bit strange code.
 def pmdmcalc():
     operation = input("PMDMcalc is welcomming you! hint: + - / *. Type the symbol here: ").strip()
 
@@ -70,50 +68,6 @@ def pmdmcalc():
 
     else:
         return "Your symbol is not supported in PMDMcalc. Please try again with another symbol."
-def superpmdmcalc():
-    operation = input("SUPERPMDMcalc is welcoming you! hint: + - / * or < = >. Type the symbol here: ").strip()
-
-    if operation in ["+", " +"]:
-        num1 = float(input("Number 1: "))
-        num2 = float(input("Number 2: "))
-        num3 = float(input("Number 3: "))
-        return f"Result: {num1 + num2 + num3}"
-
-    elif operation in ["-", " -"]:
-        num1 = float(input("Number 1: "))
-        num2 = float(input("Number 2: "))
-        num3 = float(input("Number 3: "))
-        return f"Result: {num1 - num2 - num3}"
-
-    elif operation in ["/", " /"]:
-        num1 = float(input("Number 1: "))
-        num2 = float(input("Number 2: "))
-        num3 = float(input("Number 3: "))
-        if num2 == 0 or num3 == 0:
-            return "Error: Division by zero."
-        return f"Result: {num1 / num2 / num3}"
-
-    elif operation in ["*", " *"]:
-        num1 = float(input("Number 1: "))
-        num2 = float(input("Number 2: "))
-        num3 = float(input("Number 3: "))
-        return f"Result: {num1 * num2 * num3}"
-    
-    elif operation in ["<", " <", ">", " >"]:
-        num1 = float(input("Number 1:"))
-        num2 = float(input("Number 2:"))
-        if operation.strip() == "<":
-            return str(num1 < num2)
-        elif operation.strip() == ">":
-            return str(num1 > num2)
-
-    elif operation == "=":
-        num1 = float(input("Number 1:"))
-        num2 = float(input("Number 2:"))
-        return str(num1 == num2)
-
-    else:
-        return "Your symbol is not supported in SUPERPMDMcalc. Please try again with another symbol."
 
 # All commands are in this handle_command() tag.
 def handle_command(command):
