@@ -23,9 +23,9 @@ def supercommand():
                       
                 PyTerm Supermode v1.0
                 Python: v3.8
-                Version Created: Twenty-Third April 2024
+                Version Created: Twenty-Fourth April 2024
                 Initial Day Of Creation: Twenty-Third April 2024
-                Application: PyTerm v0.1-beta
+                Application: PyTerm v0.1.0-stable
                 
                 """)
             elif command == "superhelp":
@@ -84,10 +84,10 @@ PPPP     y      T    EEE   RRRR  M M M
 P        y      T    E     R  R  M   M
 P        y      T    EEEE  R   R M   M
 
-        PyTerm v0.1.0-beta
+        PyTerm v0.1.0-stable
         Python: v3.8
         Version Created: Twenty-Third April 2024
-        Initial Day Of Creation: Twenty-Third April 2024
+        Initial Day Of Creation: Twenty-Fourth April 2024
         Operating System: MacOS
         """
     elif command == "pmdm":
