@@ -7,7 +7,9 @@ def supercommand():
         while True:
             command = input().strip().lower()
             if command == "":
-                continue 
+                continue
+            elif command == "superpmdm":
+                superpmdmcalc()
             elif command == "supertype":
                 typed_text = input("Type something:")
                 print(typed_text + typed_text)
@@ -42,9 +44,9 @@ def supercommand():
                 print("No such command in supermode.")
     else:
         print("PyTerm error: wrong password.")
-
+# PMDMcalc integrated with PyTerm, and even more powerful version for the supermode, SUPERPMDMcalc!
 def pmdmcalc():
-    operation = input("hint: + - / *. Type the symbol here: ").strip()
+    operation = input("PMDMcalc is welcomming you! hint: + - / *. Type the symbol here: ").strip()
 
     if operation in ["+", " +"]:
         num1 = float(input("Number 1: "))
@@ -68,11 +70,56 @@ def pmdmcalc():
 
     else:
         return "Your symbol is not supported in PMDMcalc. Please try again with another symbol."
+def superpmdmcalc():
+    operation = input("SUPERPMDMcalc is welcoming you! hint: + - / * or < = >. Type the symbol here: ").strip()
 
+    if operation in ["+", " +"]:
+        num1 = float(input("Number 1: "))
+        num2 = float(input("Number 2: "))
+        num3 = float(input("Number 3: "))
+        return f"Result: {num1 + num2 + num3}"
+
+    elif operation in ["-", " -"]:
+        num1 = float(input("Number 1: "))
+        num2 = float(input("Number 2: "))
+        num3 = float(input("Number 3: "))
+        return f"Result: {num1 - num2 - num3}"
+
+    elif operation in ["/", " /"]:
+        num1 = float(input("Number 1: "))
+        num2 = float(input("Number 2: "))
+        num3 = float(input("Number 3: "))
+        if num2 == 0 or num3 == 0:
+            return "Error: Division by zero."
+        return f"Result: {num1 / num2 / num3}"
+
+    elif operation in ["*", " *"]:
+        num1 = float(input("Number 1: "))
+        num2 = float(input("Number 2: "))
+        num3 = float(input("Number 3: "))
+        return f"Result: {num1 * num2 * num3}"
+    
+    elif operation in ["<", " <", ">", " >"]:
+        num1 = float(input("Number 1:"))
+        num2 = float(input("Number 2:"))
+        if operation.strip() == "<":
+            return str(num1 < num2)
+        elif operation.strip() == ">":
+            return str(num1 > num2)
+
+    elif operation == "=":
+        num1 = float(input("Number 1:"))
+        num2 = float(input("Number 2:"))
+        return str(num1 == num2)
+
+    else:
+        return "Your symbol is not supported in SUPERPMDMcalc. Please try again with another symbol."
+
+# All commands are in this handle_command() tag.
 def handle_command(command):
     command = command.strip().lower()
     if command == "help":
-        return "Available commands: help, exit, info, pmdm, super"
+        return "Available commands: help, exit, info, pmdm, super, type. Available Add-ons: -h"
     elif command == "exit":
         return "Exiting..."
     elif command == "info":
@@ -93,6 +140,11 @@ P        y      T    EEEE  R   R M   M
         return pmdmcalc()
     elif command == "super":
         return supercommand()
+    elif command == "type":
+        typed_text = input("Type something:")
+        print(typed_text)
+    elif command == "type -h":
+        return "Type is a command that copies the text you've already written. I know, it's unuseful but someone would like it."
     elif command == "help -h":
         return "Help is a command that let's you see all the commands in PyTerm."
     elif command == "exit -h":
