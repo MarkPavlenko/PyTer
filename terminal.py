@@ -86,8 +86,8 @@ P        y      T    EEEE  R   R M   M
 
         PyTerm v0.1.0-stable
         Python: v3.8
-        Version Created: Twenty-Third April 2024
-        Initial Day Of Creation: Twenty-Fourth April 2024
+        Version Created: Twenty-Fourth April 2024
+        Initial Day Of Creation: Twenty-Third April 2024
         Operating System: MacOS
         """
     elif command == "pmdm":

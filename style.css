@@ -1,0 +1,26 @@
+.elements{
+    background-color: blue;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 20px;
+}
+body{
+    font-family: 'Hack Regular';
+    src: local('Hack Regular'), url('Hack-Regular.woff') format('woff');
+    background-color: rgb(43, 43, 43);
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+a{
+    color: white;
+    text-decoration: wavy;
+    cursor: alias;
+}
