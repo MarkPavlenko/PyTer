@@ -1,7 +1,6 @@
 # PyTerm
 
 PyTerm is a terminal based on pure Python and nothing more.
-The project is archived and is read only. 
 
 ## Installation
 
